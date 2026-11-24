@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>480</width><height>240</height></rect>
+  </property>
+  <property name="windowTitle"><string>Inicio de Sesión - Sistema de Biblioteca</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="lbl_titulo">
+     <property name="font"><font><pointsize>14</pointsize><bold>true</bold></font></property>
+     <property name="text"><string>SISTEMA DE GESTIÓN DE BIBLIOTECA</string></property>
+     <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0"><widget class="QLabel" name="l1"><property name="text"><string>Usuario / Correo:</string></property></widget></item>
+     <item row="0" column="1"><widget class="QLineEdit" name="txt_usuario"><property name="placeholderText"><string>admin@sistema.com</string></property></widget></item>
+     <item row="1" column="0"><widget class="QLabel" name="l2"><property name="text"><string>Contraseña:</string></property></widget></item>
+     <item row="1" column="1"><widget class="QLineEdit" name="txt_password"><property name="echoMode"><enum>QLineEdit::EchoMode::Password</enum></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item><widget class="QPushButton" name="btn_ingresar"><property name="text"><string>Ingresar al Sistema</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_cancelar"><property name="text"><string>Cancelar</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

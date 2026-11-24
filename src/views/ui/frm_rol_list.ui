@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RolListForm</class>
+ <widget class="QWidget" name="RolListForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>760</width><height>480</height></rect>
+  </property>
+  <property name="windowTitle"><string>Gestión de Roles</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="hl_top">
+     <item><widget class="QLineEdit" name="txt_buscar"><property name="placeholderText"><string>Buscar rol...</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_buscar"><property name="text"><string>Buscar</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_nuevo"><property name="text"><string>Nuevo Rol</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_editar"><property name="text"><string>Editar Rol</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_eliminar"><property name="text"><string>Eliminar Rol</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tbl_roles">
+     <property name="selectionBehavior"><enum>QAbstractItemView::SelectionBehavior::SelectRows</enum></property>
+     <property name="selectionMode"><enum>QAbstractItemView::SelectionMode::SingleSelection</enum></property>
+     <column><property name="text"><string>ID</string></property></column>
+     <column><property name="text"><string>Nombre del Rol</string></property></column>
+     <column><property name="text"><string>Descripción</string></property></column>
+     <column><property name="text"><string>Estado</string></property></column>
+    </widget>
+   </item>
+   <item><widget class="QLabel" name="label_2"><property name="text"><string>Mostrando 0 roles</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

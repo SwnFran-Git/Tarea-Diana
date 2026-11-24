@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>820</width><height>500</height></rect>
+  </property>
+  <property name="windowTitle"><string>Catálogo de Programas de Estudio</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="hl_top">
+     <item><widget class="QLineEdit" name="txt_buscar"><property name="placeholderText"><string>Buscar por código o nombre...</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_buscar"><property name="text"><string>Buscar</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_nuevo"><property name="text"><string>Nuevo Programa</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_editar"><property name="text"><string>Editar</string></property></widget></item>
+     <item><widget class="QPushButton" name="btn_eliminar"><property name="text"><string>Eliminar</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tbl_programas">
+     <property name="selectionBehavior"><enum>QAbstractItemView::SelectionBehavior::SelectRows</enum></property>
+     <property name="selectionMode"><enum>QAbstractItemView::SelectionMode::SingleSelection</enum></property>
+     <column><property name="text"><string>Código</string></property></column>
+     <column><property name="text"><string>Estado</string></property></column>
+     <column><property name="text"><string>Nombre</string></property></column>
+     <column><property name="text"><string>Creación</string></property></column>
+    </widget>
+   </item>
+   <item><widget class="QLabel" name="label_2"><property name="text"><string>Se muestran los últimos (0) registros</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1024</width><height>640</height></rect>
+  </property>
+  <property name="windowTitle"><string>Sistema de Gestión de Biblioteca - Arquitectura MVC + DAO</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="lbl_portada">
+      <property name="font"><font><pointsize>15</pointsize><bold>true</bold></font></property>
+      <property name="text"><string>Sistema Corporativo de Biblioteca — Seleccione una opción en el menú superior</string></property>
+      <property name="alignment"><set>Qt::AlignmentFlag::AlignCenter</set></property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect><x>0</x><y>0</y><width>1024</width><height>24</height></rect>
+   </property>
+   <widget class="QMenu" name="menuMantenimiento">
+    <property name="title"><string>&amp;Mantenimiento</string></property>
+    <addaction name="action_programas"/>
+    <addaction name="action_roles"/>
+    <addaction name="separator"/>
+    <addaction name="action_empleados"/>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title"><string>&amp;Reportes</string></property>
+    <addaction name="action_reporte_empleados"/>
+    <addaction name="action_dashboard"/>
+   </widget>
+   <addaction name="menuMantenimiento"/>
+   <addaction name="menuReportes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_programas"><property name="text"><string>Programas de Estudio</string></property></action>
+  <action name="action_roles"><property name="text"><string>Roles</string></property></action>
+  <action name="action_empleados"><property name="text"><string>Empleados</string></property></action>
+  <action name="action_reporte_empleados"><property name="text"><string>Consulta de Personal</string></property></action>
+  <action name="action_dashboard"><property name="text"><string>Tablero Estadístico (Dashboard)</string></property></action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
